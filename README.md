@@ -1,3 +1,7 @@
+# Tecnologias  
+-Este proyecto fue creado con React y Typescript
+-Utiliza la librería de https://mui.com/ para los componentes visuales 
+
 # Descargar el repositorio
 -Para poder ejecutar la applicación primero es necesario descargar el repositorio 
 -Despues se debe instalar las dependencias con el comando:
