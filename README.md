@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# Descargar el repositorio
+-Para poder ejecutar la applicación primero es necesario descargar el repositorio 
+-Despues se debe instalar las dependencias con el comando:
+  `npm i`
+-Y para iniciar el comando:
+`npm start`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Iniciar sesión
+-Una vez abierta la applicación debemos de utilizar alguna de las credenciales que la API de usuarios utiliza de lo contrario regresara error.
+  https://fakestoreapi.com/
+  username: "mor_2314",
+  password: "83r5^_"
+Si coinciden el usuario y la contraseña nos permitira accesar de lo contrario regresara un error.
 
-## Available Scripts
+# Productos
+Dentro de la pantalla principal podremos ver una pequeña animación que nos muestra que esta buscando productos, una vez cargado podremos ver los productos.
 
-In the project directory, you can run:
+# Filtros
+Hay un input sobre en la parte superior derecha de los productos, que nos ayudara a filtrar por nombre los prodcutos antes cargados.
 
-### `npm start`
+# Agregar al carrito
+Para agrergar productos al carrito es necesario seleccionar la opción 'Add to cart' en cada elmente, una vez seleccionado este cambiara su texto por 'Remove'.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Resumen del carrito
+En la parte superior derecha de la pantalla, podremos ver un recuadro donde se observaran los productos se vayas agregando, si no cuenta con productos mostrara un mensaje.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Remover del carrito
+Podremos quitar los productos del carrito hay dos formas, la primera sería dando clic en el botón de Remover o en el icono de basura en el resumen del carrito.
 
-### `npm test`
+# Cerrar sesión
+Para cerrar sesión solo debemos de ir al Header y seleccionar la opción de Logout del menu.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
