@@ -9,9 +9,11 @@ import Typography from "@mui/material/Typography";
 import Copyright from "../components/CreatedBy/CreatedBy";
 import background from "../assets/img/slanted-gradient.png";
 import mainLogo from "../assets/img/main-logo.png";
+import spsLogo from "../assets/img/sps.png";
 import requestLogin from "../services/AuthService";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import Alert from "@mui/material/Alert";
 
 export default function LoginPage() {
   const navigate = useNavigate();
@@ -30,13 +32,13 @@ export default function LoginPage() {
     if (response?.token) {
       navigate("/");
     } else {
-      setError("Invalid username or password");
+      setError("Usuario o password invalido");
+      <Alert severity="error">Usuario o password invalido, por favor vuelve a intentar</Alert>
     }
   };
 
   return (
     <Grid container component="main" sx={{ height: "100vh" }}>
-      <CssBaseline />
       <Grid
         item
         xs={false}
@@ -49,7 +51,10 @@ export default function LoginPage() {
           backgroundSize: "cover",
           backgroundPosition: "left",
         }}
-      />
+      > 
+       <img src={spsLogo} height={80} width={"auto"} alt="My Image" style={{position: 'absolute', top:30, left: 30}} />
+
+      </Grid>
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <Box
           sx={{

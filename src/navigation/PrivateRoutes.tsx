@@ -1,20 +1,14 @@
-import React from 'react';
-import { Route, Navigate } from 'react-router-dom';
-import { getToken } from '../services/AuthService';
+import React from "react";
+import { Navigate, Outlet } from "react-router-dom";
+import { getToken } from "../services/AuthService";
 
-interface PrivateRouteProps {
-  path: string;
-  element: React.ReactNode;
-}
-
-const PrivateRoute: React.FC<PrivateRouteProps> = ({ path, element }) => {
+const RequireAuth: React.FC = () => {
   const token = getToken();
+  if (!token) {
+    return <Navigate to="/login" replace />;
+  }
 
-  return token ? (
-    <Route path={path} element={element} />
-  ) : (
-    <Navigate to="/login" replace />
-  );
+  return <Outlet />;
 };
 
-export default PrivateRoute;
+export default RequireAuth;
