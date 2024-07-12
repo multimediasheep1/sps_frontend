@@ -3,7 +3,7 @@
 -Utiliza la librería de https://mui.com/ para los componentes visuales 
 
 # Firebase Hosting  
--Hosting https://spsdemo-1e20d.web.app/login
+-Hosting https://spsdemo-1e20d.web.app
 
 # Descargar el repositorio
 -Para poder ejecutar la applicación primero es necesario descargar el repositorio 
